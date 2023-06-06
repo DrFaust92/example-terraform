@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "instance1" {
- count = 10
+ count = 100
  name         = "instance1"
  machine_type = "n1-standard-32" # <<<<< Try changing this to n1-standard-8 to compare the costs
  zone         = "us-central1-a"
